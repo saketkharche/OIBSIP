@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <title>Landing Page</title>
+</head>
+<body>
+ <nav>
+   <div class="banner">Saket Technology</div>
+   <!-- toggle menu button -->
+   <span class="menubutton" onclick="openNav()">&#9776;</span>
+ 
+   <div class="Navlinks">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Product</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">About us</a></li>
+       <button type="button">Login</button>
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNavigation" id="sideNavigation">
+     <a href="#" class="closeButton" onclick="closeNav()"> &#10006;</a>
+     <a href="#">Home</a>
+     <a href="#">Product</a>
+     <a href="#">Contact</a>
+     <a href="#">About us</a>
+     <a href="#"><button type="button">Login</button> </a>
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="rows">
+     <div class="column01">
+       <h1>We Provide Quality Product</h1>
+       <p>We Provide various type of software To have a ease in business!</p>
+       <button>PURCHASE</button>
+     </div>
+     <div class="column02">
+       <img src="https://freepngimg.com/thumb/technology/7-2-technology-picture.png" alt="banner" width="500px">
+     </div>
+   </div>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sideNavigation").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sideNavigation").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>
